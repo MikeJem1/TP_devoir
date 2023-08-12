@@ -1,0 +1,10 @@
+create table sales(
+  total DECIMAL DEFAULT 0 ,
+  discount DECIMAL DEFAULT 0,
+  SUB_TOTAL DECIMAL DEFAULT 0
+  );
+  
+  INSERT INTO SALES(total,discount,sub_total)
+  VALUES('10','3.00','7');
+ SELECT SUM(total) from sales;
+SELECT COUNT(*) from sales;
